@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Design</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+ <style>
+ul{
+    list-style: none;
+    border: 2px solid darkcyan;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: darkcyan;
+    color: white; 
+}
+@media screen and (orientation: landscape)
+{
+    li{
+        display: inline;
+        margin-right: 30px;
+    }
+}
+@media screen and (orientation: portrait)
+{
+li{
+    display: block;
+    margin-bottom: 30px;
+}
+ul{
+    width: 60px;
+    margin-left: -60px;
+    transition: 3s;
+   
+}
+un:hover{
+    margin-left: 0px;
+    transition: 3s;
+}
+.menu-title{
+    display: none;
+}
+} 
+@media screen and (min-width: 500px) {
+    body{
+        background-color: yellow;
+    }
+}
+@media screen and (max-width: 500px) {
+    body{
+        background-color: red;
+    }
+    li{
+    display: block;
+    margin-bottom: 30px;
+}
+ul{
+    width: 60px;
+    margin-left: -60px;
+    transition: 3s;
+   
+}
+un:hover{
+    margin-left: 0px;
+    transition: 3s;
+}
+.menu-title{
+    display: none;
+}
+}
+    </style>
+</head> 
+<body>
+    <nav>
+        <ul>
+            <li><span class="bi bi-facebook"><span class="menu-title"></span>Facebook</span> </li>
+            <li><span class="bi bi-twitter"><span class="menu-title"></span> Twitter</span> </li>
+            <li><span class="bi bi-instagram"><span class="menu-title"></span> Instagram</span> </li>
+            <li><span class="bi bi-linkedin"><span class="menu-title"></span> Linkedin</span> </li>
+        </ul>
+    </nav>
+</body>
+</html> 
